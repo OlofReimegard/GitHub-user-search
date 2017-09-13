@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div id="login-box">
+        <input id="usrnm" type="text" placeholder="Username">
+        <input id="pswrd" type="password" placeholder="Password">
+        <div id="login" class="button">Log in</div>
+    </div>
+    <div id="search">
+        <input id="userid" type="text" placeholder=" Search for github user">
+        <div class="button">Search</div>
+    </div>
+    <div id="results">
+    </div>
+
+    <template id="users">
+        {{#each user}}
+        <div class="repo">
+            <img class="profile-pic" src="{{image}}" alt="">
+            <h2 class="name">{{name}}</h2>
+
+            <div class="{{name}} commit-text">
+
+            </div>
+
+        </div>
+        {{/each}}
+    </template>
+
+    <template id="commits">
+        <ul class="list">
+        {{#each commits}}
+            <li>{{comment}} - {{commitName}}<li>
+        {{/each}}
+        </ul>
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+    background-color: #282828;
+    min-height: 100vh;
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+}
+
+#login-box {
+    visibility: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 50vh;
+    margin: 25vh 0 0 15vw;
+    background-color: rgb(200, 200, 200);
+}
+
+#login-box input {
+    height: 30px;
+    appearance: none;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+#login-box .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 4em;
+    background-color: white;
+    border: none;
+    margin: 5px;
+}
+
+#search {
+    visibility: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    height: 40px;
+    margin: 1vh 0 0 1vw;
+    background-color: rgb(200, 200, 200);
+}
+
+#search input {
+    height: 30px;
+    width: 85vw;
+    appearance: none;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+#search .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 10vw;
+    background-color: lightgreen;
+    border: none;
+    margin: 5px;
+}
+
+#search .button {
+    background-color: lightgreen;
+    color: darkgrey;
+}
+
+#login-box .button {
+    background-color: lightgreen;
+    color: darkgrey;
+}
+
+h2 {
+    color: white;
+    font-size: 3em;
+    transform: translateY(.25em);
+    margin-left: .25em;
+}
+
+.repo {
+    width: 98vw;
+    margin-left: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2vh;
+}
+
+.profile-pic {
+    height: 10vh;
+}
+
+li {
+    margin-top: 10px;
+    color: lightgrey;
+    list-style: none;
+    width: 100%;
+}
+
+.commit-text {
+    width: 100%;
+}
